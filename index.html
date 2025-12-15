@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "flipcard.css">
+    <style>
+
+        .welcome{
+
+            grid-column: 1/3;
+            grid-row: 4/9;
+            
+        }
+
+        .news{
+
+            grid-column: 1/3;
+            grid-row: 9/18
+
+        }
+
+
+        .welcome img{
+
+            position: absolute;
+            left: 200px;
+            top: -30px;
+            
+
+        }
+
+        .stay-tuned{
+
+            position: relative;
+            top: -140px;
+            text-align: center;
+
+        }
+
+        @media screen and (max-width: 800px){
+
+            .welcome{
+
+                grid-column: 1/5;
+                grid-row: 4/10
+
+            }
+
+            .news{
+
+                grid-column: 1/5;
+                grid-row: 10/18;
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class = "container">
+
+        <header>
+            <h1>Slug Station Studio</h1>
+            <img src = "Slug.gif">
+        </header>
+
+        <nav>
+
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About Us</a>
+            <a href = "games.html">Our Games</a>
+
+        </nav>
+
+        <article class = "welcome">
+            <h2>Creators of the Critically Acclaimed Slug Jumper</h2>
+            <p>Released in 2022, our favorite slug embarks on the adventure of a lifetime...
+            </p>
+            <p>Read more about slug jumper and our other games by clicking the link above!</p>
+            <img src = "slug1.png" style = "scale: 0.2; border-radius: 20px;">
+        </article>
+
+        <article class = "news">
+            <h2>Here's what's happening at Slug Station Studio!</h2>
+
+            <h3>Now Hiring!</h3>
+
+            <p class = "hiring">Do you have dreams of making your visions come to life? Do you enjoy challenging yourself while working on a team with motivated individiausl? Then look no further! slug
+                Station Studio is currently hiring for various positions. We are currently hiring for programmer and audio design roles!
+            </p>
+
+            <h3>Cragstone Update</h3>
+
+            <p>I know you've all been wanting to hear more about our up and coming new game "Cragstone", and we here at the team are so excited to show you more! After the success of our last demo,
+                we have doubled down on our efforts to make sure our game meets your expectations. We have taken your feedback and incorporated many new elements into our game. We are not quite ready to show
+                anything new yet, but we plan to have a new playable level ready for you all to enjoy by the end of next month!
+            </p>
+
+        </article>
+
+
+
+        <aside class = "preview">
+            <h2 style = "text-align: center;">A quick preview of some of our games!</h2>
+           <div class="flip-card" style = " position: relative; left: 50px; top: 20px;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="slug3.png" alt="Avatar" style="width:200px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+
+                       
+                            <h1>Slug Jumper</h1>
+
+                            <p>A 2D side scroller where you must jump and climb to reach your goal, all the while avoiding enemies!</p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+         <div class="flip-card" style = "position: relative; left: 420px; top: -280px;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Base_Tank.png" alt="Avatar" style="width:200px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+
+                       
+                            <h1>Enter the Crypt</h1>
+
+                            <p>A tower defense game where you must protect your kingdom from evil forces!</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2 class = "stay-tuned">Check out our Game Page to learn more!</h2>
+
+       
+        </aside>
+
+        <footer>Logan Kurker 2025</footer>
+
+    </div>
+    
+</body>
+</html>
